@@ -1,0 +1,15 @@
+{
+  "name": "pulse",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace @pulse/web\" \"npm run start:dev --workspace @pulse/api\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
